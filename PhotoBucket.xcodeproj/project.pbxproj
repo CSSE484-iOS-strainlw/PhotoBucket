@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC4DD4BA26AF7E8D003A3338 /* PhotoBucketTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DD4B926AF7E8D003A3338 /* PhotoBucketTableViewController.swift */; };
+		DC4DD4BC26AF7EAE003A3338 /* PhotoBucketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DD4BB26AF7EAE003A3338 /* PhotoBucketDetailViewController.swift */; };
+		DC4DD4BE26AF7EC4003A3338 /* PhotoBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4DD4BD26AF7EC4003A3338 /* PhotoBucket.swift */; };
 		DC79312926A7A8590098D162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC79312826A7A8590098D162 /* AppDelegate.swift */; };
 		DC79312B26A7A8590098D162 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC79312A26A7A8590098D162 /* SceneDelegate.swift */; };
-		DC79312D26A7A8590098D162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC79312C26A7A8590098D162 /* ViewController.swift */; };
 		DC79313026A7A8590098D162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC79312E26A7A8590098D162 /* Main.storyboard */; };
 		DC79313226A7A85D0098D162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC79313126A7A85D0098D162 /* Assets.xcassets */; };
 		DC79313526A7A85D0098D162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC79313326A7A85D0098D162 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC4DD4B926AF7E8D003A3338 /* PhotoBucketTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBucketTableViewController.swift; sourceTree = "<group>"; };
+		DC4DD4BB26AF7EAE003A3338 /* PhotoBucketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBucketDetailViewController.swift; sourceTree = "<group>"; };
+		DC4DD4BD26AF7EC4003A3338 /* PhotoBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBucket.swift; sourceTree = "<group>"; };
 		DC79312526A7A8590098D162 /* PhotoBucket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBucket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC79312826A7A8590098D162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC79312A26A7A8590098D162 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DC79312C26A7A8590098D162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC79312F26A7A8590098D162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC79313126A7A85D0098D162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC79313426A7A85D0098D162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,11 +62,13 @@
 			children = (
 				DC79312826A7A8590098D162 /* AppDelegate.swift */,
 				DC79312A26A7A8590098D162 /* SceneDelegate.swift */,
-				DC79312C26A7A8590098D162 /* ViewController.swift */,
 				DC79312E26A7A8590098D162 /* Main.storyboard */,
 				DC79313126A7A85D0098D162 /* Assets.xcassets */,
 				DC79313326A7A85D0098D162 /* LaunchScreen.storyboard */,
 				DC79313626A7A85D0098D162 /* Info.plist */,
+				DC4DD4B926AF7E8D003A3338 /* PhotoBucketTableViewController.swift */,
+				DC4DD4BB26AF7EAE003A3338 /* PhotoBucketDetailViewController.swift */,
+				DC4DD4BD26AF7EC4003A3338 /* PhotoBucket.swift */,
 			);
 			path = PhotoBucket;
 			sourceTree = "<group>";
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC79312D26A7A8590098D162 /* ViewController.swift in Sources */,
 				DC79312926A7A8590098D162 /* AppDelegate.swift in Sources */,
+				DC4DD4BE26AF7EC4003A3338 /* PhotoBucket.swift in Sources */,
+				DC4DD4BA26AF7E8D003A3338 /* PhotoBucketTableViewController.swift in Sources */,
 				DC79312B26A7A8590098D162 /* SceneDelegate.swift in Sources */,
+				DC4DD4BC26AF7EAE003A3338 /* PhotoBucketDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.strainlw.PhotoBucket";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.strainlw.PhotoBucket";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
